@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sign_button_left">5dp</dimen>
+    <dimen name="sign_button_height">29dp</dimen>
+    <dimen name="sign_button_miniwidth">74dp</dimen>
+    <dimen name="sign_button_pageright">5dp</dimen>
+    <dimen name="sign_button_pagebottom">15dp</dimen>
+    <dimen name="sign_button_radio">4dp</dimen>
+</resources>

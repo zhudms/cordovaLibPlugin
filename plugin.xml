@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.ryl.cordovalib" version="0.0.3"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>CordovaRylLib</name>
+    <js-module name="CordovaRylLib" src="www/CordovaRylLib.js">
+        <clobbers target="cordova.ryl.cordovalib" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="CordovaRylLib">
+                <param name="android-package" value="cordova.ryl.cordovalib.cordovaRylLib" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.CAMERA" />
+            <uses-permission android:name="android.permission.VIBRATE" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-feature android:name="android.hardware.camera" android:required="true" />
+            <uses-feature android:name="android.hardware.camera.autofocus"
+                android:required="false" />
+        </config-file>
+        <source-file src="src/android/PermissionHelper.java"
+            target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/ImageBase64Helper.java"
+            target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/ToastUtil.java" target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/FileHelper.java" target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/ActivityResultHelper.java"
+            target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/SoftHandle.java" target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/lib_colors.xml" target-dir="res/values" />
+        <source-file src="src/android/lib_dimens.xml" target-dir="res/values" />
+        <source-file src="src/android/lib_style.xml" target-dir="res/values" />
+        <source-file src="src/android/sign_button_back.xml" target-dir="res/drawable" />
+        <source-file src="src/android/sign_button_normal.xml" target-dir="res/drawable" />
+        <source-file src="src/android/sign_button_onselect.xml" target-dir="res/drawable" />
+        <framework custom="true" src="build-extras.gradle" type="gradleReference" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="CordovaRylLib">
+                <param name="ios-package" value="CordovaRylLib" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/CordovaRylLib.m" />
+
+        <header-file src="src/ios/LocalDef.h" />
+        <source-file src="src/ios/LocalDef.m" />
+
+        <header-file src="src/ios/JsonHelper.h" />
+        <source-file src="src/ios/JsonHelper.m" />
+
+        <header-file src="src/ios/JSONKit.h" />
+        <source-file src="src/ios/JSONKit.m" />
+
+        <header-file src="src/ios/FileHelper.h" />
+        <source-file src="src/ios/FileHelper.m" />
+
+        <header-file src="src/ios/VCHelper.h" />
+        <source-file src="src/ios/VCHelper.m" />
+        
+        <header-file src="src/ios/ImageHelper.h" />
+        <source-file src="src/ios/ImageHelper.m" />
+        
+        <header-file src="src/ios/UIImage+STBlur.h" />
+        <source-file src="src/ios/UIImage+STBlur.m" />
+        
+        
+
+    </platform>
+</plugin>
