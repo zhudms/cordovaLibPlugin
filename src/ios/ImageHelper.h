@@ -12,4 +12,5 @@
 - (NSData *)compressOriginalImage:(UIImage *)image toMaxDataSizeKBytes:(CGFloat)size;
 
 -(NSString*)imageToBase64:(UIImage *)img;
+- (UIImage *)fixOrientation:(UIImage *)aImage;
 @end
