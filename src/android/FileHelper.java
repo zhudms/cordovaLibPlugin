@@ -71,10 +71,10 @@ public class FileHelper {
 
                     if (file.exists()) {
                         file.delete();
-                        file.createNewFile();
-                    } else {
-                        file.createNewFile();
+                       
                     }
+                        file.createNewFile();
+                  
                     FileOutputStream fos = null;
                     fos = new FileOutputStream(file);
                     fos.write(date);

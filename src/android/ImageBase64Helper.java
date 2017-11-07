@@ -16,7 +16,7 @@ public class ImageBase64Helper {
 
 
     /**
-     * 此方法未做数据验证，在传达图片时必然失败，因为有1M限制
+     * 此方法未做数据验证，在传大图片时必然失败，因为有1M限制
      *
      * @param bitmap
      * @param handle
