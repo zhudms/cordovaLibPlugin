@@ -7,6 +7,7 @@ package cordova.ryl.cordovalib;
 public class ActivityResultHelper {
     public static final int FAIL = 10;
     public static final int CANCEL = 11;
+    public static final int ERROR = 12;
     public static final String ERROR_MESSAGE = "error_message";
     public static final String IMAGE_MESSAGE = "image_message";
     public static final int PERMISSION_DENIED_ERROR = 20;
