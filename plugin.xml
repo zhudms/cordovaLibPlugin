@@ -27,6 +27,8 @@
             target-dir="src/cordova/ryl/cordovalib" />
             <source-file src="src/android/ImageHelper.java"
             target-dir="src/cordova/ryl/cordovalib" />
+              <source-file src="src/android/FileDataBean.java"
+            target-dir="src/cordova/ryl/cordovalib" />
             
         <source-file src="src/android/ImageBase64Helper.java"
             target-dir="src/cordova/ryl/cordovalib" />
