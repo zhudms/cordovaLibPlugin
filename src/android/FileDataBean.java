@@ -1,10 +1,10 @@
 package cordova.ryl.cordovalib;
-
+import java.io.Serializable;
 /**
  * Created by rongyile on 2017/11/22.
  */
 
-public class FileDataBean {
+public class FileDataBean  implements Serializable{
 
     private String name;
     private byte[] data;

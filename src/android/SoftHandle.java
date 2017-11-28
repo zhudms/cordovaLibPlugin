@@ -1,4 +1,4 @@
-package cordova.ryl.wagesignalive;
+package cordova.ryl.cordovalib;
 
 import android.content.Context;
 import android.os.Handler;

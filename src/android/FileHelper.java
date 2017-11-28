@@ -15,7 +15,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.util.ArrayList;
 
-import cordova.ryl.wagesignalive.util.FileDataBean;
 
 /**
  * Created by Administrator on 2017/4/13.
