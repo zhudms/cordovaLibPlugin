@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.ryl.cordovalib" version="0.0.6"
-    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova.ryl.cordovalib"
+    version="0.0.7" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>CordovaRylLib</name>
     <js-module name="CordovaRylLib" src="www/CordovaRylLib.js">
         <clobbers target="cordova.ryl.cordovalib" />
@@ -24,14 +24,12 @@
                 android:required="false" />
         </config-file>
 
-        
+
         <source-file src="src/android/PermissionHelper.java"
             target-dir="src/cordova/ryl/cordovalib" />
-            <source-file src="src/android/ImageHelper.java"
-            target-dir="src/cordova/ryl/cordovalib" />
-              <source-file src="src/android/FileDataBean.java"
-            target-dir="src/cordova/ryl/cordovalib" />
-            
+        <source-file src="src/android/ImageHelper.java" target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/FileDataBean.java" target-dir="src/cordova/ryl/cordovalib" />
+
         <source-file src="src/android/ImageBase64Helper.java"
             target-dir="src/cordova/ryl/cordovalib" />
         <source-file src="src/android/ToastUtil.java" target-dir="src/cordova/ryl/cordovalib" />
@@ -39,6 +37,13 @@
         <source-file src="src/android/ActivityResultHelper.java"
             target-dir="src/cordova/ryl/cordovalib" />
         <source-file src="src/android/SoftHandle.java" target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/CordovaHelper.java" target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/MyPluginParent.java"
+            target-dir="src/cordova/ryl/cordovalib" />
+        <source-file src="src/android/RequestPromisionHelper.java"
+            target-dir="src/cordova/ryl/cordovalib" />
+
+
         <source-file src="src/android/lib_colors.xml" target-dir="res/values" />
         <source-file src="src/android/lib_dimens.xml" target-dir="res/values" />
         <source-file src="src/android/lib_style.xml" target-dir="res/values" />
@@ -69,14 +74,13 @@
 
         <header-file src="src/ios/VCHelper.h" />
         <source-file src="src/ios/VCHelper.m" />
-        
+
         <header-file src="src/ios/ImageHelper.h" />
         <source-file src="src/ios/ImageHelper.m" />
-        
+
         <header-file src="src/ios/UIImage+STBlur.h" />
         <source-file src="src/ios/UIImage+STBlur.m" />
-        
-        
+
 
     </platform>
 </plugin>

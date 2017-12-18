@@ -10,7 +10,7 @@ import java.io.ByteArrayOutputStream;
  */
 
 public class ImageHelper {
-
+    public static final int IMAGE_MINWIDTH=300;
     /**
      *
      * 需要跟debug 再确认一次
